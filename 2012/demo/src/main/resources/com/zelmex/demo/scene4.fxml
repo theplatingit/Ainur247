@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="15.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.zelmex.demo.controller.controller4">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+  </padding>
+
+  <Label text="Задание 4: Сложное выражение" style="-fx-font-weight: bold;"/>
+  <Label text="c = |(N + z⁵)/(3 + z)|"/>
+  <Label text="где z = (N + ctg(N+1))/sin(N+1)"/>
+
+  <Label text="N:"/>
+  <TextField fx:id="nField"/>
+
+  <Button text="Вычислить" onAction="#calculate"/>
+
+  <Label fx:id="resultLabel"/>
+
+  <HBox spacing="10.0" alignment="CENTER">
+    <Button text="← К заданию 3" onAction="#goToScene3"/>
+  </HBox>
+</VBox>

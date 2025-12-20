@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="15.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.zelmex.demo.controller.controller2">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+  </padding>
+
+  <Label text="Задание 2: Обмен значений" style="-fx-font-weight: bold;"/>
+  <Label text="Поменять A и B местами"/>
+
+  <Label text="A:"/>
+  <TextField fx:id="aField"/>
+
+  <Label text="B:"/>
+  <TextField fx:id="bField"/>
+
+  <Button text="Поменять" onAction="#calculate"/>
+
+  <Label fx:id="resultLabel"/>
+
+  <HBox spacing="10.0" alignment="CENTER">
+    <Button text="← К заданию 1" onAction="#goToScene1"/>
+    <Button text="К заданию 3 →" onAction="#goToScene3"/>
+  </HBox>
+</VBox>
