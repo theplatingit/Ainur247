@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zelmex.task4.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label text="Задание 4: 1 − A + A² − A³ + ... + (-1)ⁿAⁿ"/>
+    <Label text="Введите A (вещественное число):"/>
+    <TextField fx:id="aField" promptText="Введите A"/>
+    <Label text="Введите N (целое число > 0):"/>
+    <TextField fx:id="nField" promptText="Введите N"/>
+    <Button text="Вычислить" onAction="#onCalculateButtonClick"/>
+    <Label fx:id="resultLabel" text="Результат появится здесь"/>
+</VBox>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.zelmex.task2.ListController"
+            prefHeight="400" prefWidth="500">
+
+    <GridPane hgap="15" vgap="15"
+              AnchorPane.topAnchor="20.0"
+              AnchorPane.leftAnchor="20.0"
+              AnchorPane.rightAnchor="20.0"
+              AnchorPane.bottomAnchor="20.0">
+
+        <Label text="Данные"
+               GridPane.columnIndex="0"
+               GridPane.rowIndex="0"
+               GridPane.halignment="LEFT">
+            <font>
+                <Font name="System Bold" size="14.0"/>
+            </font>
+        </Label>
+
+        <TextField fx:id="numberTextField"
+                   promptText="Введите число"
+                   GridPane.columnIndex="1"
+                   GridPane.rowIndex="0"
+                   prefWidth="150"/>
+
+        <Button fx:id="addButton"
+                text="Добавить"
+                onAction="#addButtonOnAction"
+                GridPane.columnIndex="2"
+                GridPane.rowIndex="0"
+                prefWidth="100"/>
+
+        <Label text="Входные данные"
+               GridPane.columnIndex="0"
+               GridPane.rowIndex="1"/>
+
+        <ListView fx:id="dataListView"
+                  GridPane.columnIndex="1"
+                  GridPane.rowIndex="1"
+                  GridPane.rowSpan="3"
+                  GridPane.columnSpan="2"
+                  prefHeight="200"
+                  prefWidth="250">
+        </ListView>
+
+        <Label text="Ответ:"
+               GridPane.columnIndex="0"
+               GridPane.rowIndex="4"/>
+
+        <Label fx:id="answerLabel"
+               text=""
+               GridPane.columnIndex="1"
+               GridPane.rowIndex="4"
+               GridPane.columnSpan="2"/>
+
+        <HBox spacing="20"
+              GridPane.columnIndex="1"
+              GridPane.rowIndex="5"
+              GridPane.columnSpan="2"
+              GridPane.halignment="CENTER">
+            <Button fx:id="okButton"
+                    text="OK"
+                    onAction="#okButtonOnAction"
+                    prefWidth="80"/>
+            <Button fx:id="cancelButton"
+                    text="Отмена"
+                    onAction="#cancelButtonOnAction"
+                    prefWidth="80"/>
+        </HBox>
+
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="100" prefWidth="120"/>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="100" prefWidth="150"/>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="100" prefWidth="100"/>
+        </columnConstraints>
+
+        <rowConstraints>
+            <RowConstraints minHeight="40" prefHeight="40"/>
+            <RowConstraints minHeight="30" prefHeight="30"/>
+            <RowConstraints minHeight="150" prefHeight="150"/>
+            <RowConstraints minHeight="30" prefHeight="30"/>
+            <RowConstraints minHeight="30" prefHeight="30"/>
+            <RowConstraints minHeight="40" prefHeight="40"/>
+        </rowConstraints>
+    </GridPane>
+</AnchorPane>
