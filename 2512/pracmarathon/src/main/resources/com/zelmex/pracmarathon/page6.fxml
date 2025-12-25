@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="20" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zelmex.pracmarathon.controller.Page6Controller">
+
+  <HBox alignment="CENTER_LEFT" spacing="20" style="-fx-background-color: #2c3e50; -fx-padding: 10 20;">
+    <Label style="-fx-text-fill: white; -fx-font-size: 24px; -fx-font-weight: bold;" text="MARATHON SKILLS 2016" />
+    <Region HBox.hgrow="ALWAYS" />
+    <Button onAction="#logout" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-font-weight: bold;" text="Logout" />
+  </HBox>
+
+  <VBox alignment="CENTER" spacing="20" style="-fx-padding: 50;">
+    <Label style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-alignment: center;" text="Спасибо за вашу регистрацию в качестве бегуна!" />
+
+    <Label style="-fx-text-alignment: center;" text="Спасибо за вашу регистрацию в качестве бегуна в Marathon Skills 2016!" />
+
+    <Label style="-fx-text-alignment: center;" text="С вами свяжутся по поводу оплаты." />
+  </VBox>
+
+  <Button onAction="#ok" style="-fx-pref-width: 100px; -fx-background-color: white; -fx-border-color: black; -fx-pref-height: 40px;" text="OK" />
+
+  <Region VBox.vgrow="ALWAYS" />
+
+  <Label style="-fx-font-size: 14px; -fx-text-fill: #2c3e50; -fx-padding: 20;" text="18 дней 8 часов и 17 минут до старта марафона!" />
+</VBox>

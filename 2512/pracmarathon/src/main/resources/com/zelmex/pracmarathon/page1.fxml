@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" spacing="20" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zelmex.pracmarathon.controller.Page1Controller">
+
+  <HBox alignment="CENTER_LEFT" maxWidth="Infinity" spacing="20" style="-fx-background-color: #2c3e50; -fx-padding: 10 20;">
+    <Label style="-fx-text-fill: white; -fx-font-size: 24px; -fx-font-weight: bold;" text="MARATHON SKILLS 2016" />
+    <Region HBox.hgrow="ALWAYS" />
+    <Button onAction="#login" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-weight: bold;" text="Login" />
+  </HBox>
+
+  <VBox alignment="CENTER" spacing="15" VBox.vgrow="ALWAYS">
+    <Label style="-fx-font-size: 18px;" text="Москва, Россия" />
+    <Label style="-fx-font-size: 18px;" text="среда 21 октября 2016" />
+
+    <VBox alignment="CENTER" spacing="15">
+      <Button onAction="#goToPage2" style="-fx-font-size: 16px; -fx-background-color: white; -fx-border-color: black; -fx-pref-width: 300px; -fx-pref-height: 50px;" text="Я хочу стать бегуном" />
+      <Button onAction="#goToPage8" style="-fx-font-size: 16px; -fx-background-color: white; -fx-border-color: black; -fx-pref-width: 300px; -fx-pref-height: 50px;" text="Я хочу стать спонсором бегуна" />
+      <Button onAction="#showAboutEvent" style="-fx-font-size: 16px; -fx-background-color: whote; -fx-pref-width: 300px; -fx-border-color: black; -fx-pref-height: 50px;" text="Я хочу узнать больше о событии" />
+    </VBox>
+  </VBox>
+
+  <Label style="-fx-font-size: 14px; -fx-text-fill: #2c3e50; -fx-padding: 20 0;" text="18 дней 8 часов и 17 минут до старта марафона!" />
+</VBox>

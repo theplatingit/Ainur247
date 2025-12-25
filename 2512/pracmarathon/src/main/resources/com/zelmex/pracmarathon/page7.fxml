@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="20" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zelmex.pracmarathon.controller.Page7Controller">
+
+  <HBox alignment="CENTER_LEFT" spacing="20" style="-fx-background-color: #2c3e50; -fx-padding: 10 20;">
+    <Label style="-fx-text-fill: white; -fx-font-size: 24px; -fx-font-weight: bold;" text="MARATHON SKILLS 2016" />
+    <Region HBox.hgrow="ALWAYS" />
+    <Button onAction="#goBack" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-weight: bold;" text="Назад" />
+    <Button onAction="#logout" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-font-weight: bold;" text="Logout" />
+  </HBox>
+
+  <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Меню бегуна" />
+
+  <GridPane alignment="CENTER" hgap="30" vgap="20">
+    <columnConstraints>
+      <ColumnConstraints prefWidth="250" />
+      <ColumnConstraints prefWidth="250" />
+    </columnConstraints>
+    <rowConstraints>
+      <RowConstraints prefHeight="60" />
+      <RowConstraints prefHeight="60" />
+    </rowConstraints>
+
+    <Button maxHeight="Infinity" maxWidth="Infinity" onAction="#goToPage5" style="-fx-font-size: 16px; -fx-background-color: white; -fx-border-color: black;" text="Регистрация на марафон" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+
+    <Button maxHeight="Infinity" maxWidth="Infinity" onAction="#goToPage10" style="-fx-font-size: 16px; -fx-background-color: white; -fx-border-color: black;" text="Мои спонсоры" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+    <Button maxHeight="Infinity" maxWidth="Infinity" onAction="#showProfileAlert" style="-fx-font-size: 16px; -fx-background-color: white; -fx-border-color: black;" text="Редактирование профиля" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+
+    <Button maxHeight="Infinity" maxWidth="Infinity" onAction="#showResultsAlert" style="-fx-font-size: 16px; -fx-background-color: white; -fx-border-color: black;" text="Мои результаты" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+  </GridPane>
+
+  <Button onAction="#showContacts" style="-fx-pref-width: 250px; -fx-pref-height: 60px; -fx-background-color: white; -fx-border-color: black; -fx-font-size: 16px;" text="Контакты" />
+
+  <Region VBox.vgrow="ALWAYS" />
+
+  <Label style="-fx-font-size: 14px; -fx-text-fill: #2c3e50; -fx-padding: 20;" text="18 дней 8 часов и 17 минут до старта марафона!" />
+</VBox>
